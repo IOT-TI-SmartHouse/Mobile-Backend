@@ -1,0 +1,16 @@
+version: '2'
+services:
+  app:
+    container_name: greenHouseApp
+    restart: on-failure:5 
+    build: .
+    ports:
+     - "3030:3030"
+    depends_on:
+     - sql
+  sql:
+    container_name: greenHouseDB
+    build: ./database
+    ports:
+     - "3306:3306"
+  
