@@ -199,13 +199,13 @@ CREATE TABLE IF NOT EXISTS `Users` (
   `username` varchar(255) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
-  `createdAt` datetime NOT NULL,
-  `updatedAt` datetime NOT NULL,
+  `createdAt` datetime default CURRENT_TIMESTAMP,
+  `updatedAt` datetime default CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO `Users` ( `Username`, `Password`, `Email`, `Admin`) VALUES
-	('admin', 'admin', 'admin', 1);
+INSERT INTO `Users` ( `Username`, `Password`, `Email`) VALUES
+	('admin', 'admin', 'admin');
 
 -- Dumpen data van tabel smartgardening.Users: ~0 rows (ongeveer)
 /*!40000 ALTER TABLE `Users` DISABLE KEYS */;
