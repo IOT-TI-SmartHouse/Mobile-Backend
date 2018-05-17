@@ -1,6 +1,6 @@
 {
   "secretKey": "epB4SUDHbo@Isuwbd79SuX6M8FovjW!J41Bf^T",
-  "database": "178.62.247.98",
+  "database": "178.62.247.98:3306",
   "username": "root",
   "password": "5730477ee4a5a9048363e85aa0",
   "dialect": "mysql"
