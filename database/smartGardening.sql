@@ -204,7 +204,7 @@ CREATE TABLE IF NOT EXISTS `Users` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO `Users` ( `Username`, `Password`, `Email`) VALUES
+INSERT INTO `Users` ( `username`, `password`, `email`) VALUES
 	('admin', 'admin', 'admin');
 
 -- Dumpen data van tabel smartgardening.Users: ~0 rows (ongeveer)
