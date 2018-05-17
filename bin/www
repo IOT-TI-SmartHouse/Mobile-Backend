@@ -5,4 +5,4 @@ const app = require('../app'); // The express app we just created
 app.set('port', 3030);
 
 const server = http.createServer(app);
-server.listen(port);
+server.listen(3030);
